@@ -1,0 +1,164 @@
+{
+    "provider": "https://rinkeby.infura.io/v3/162595ff143e4466a92c5983c29f5624",
+    "defaultAccount": "0xeB6241e6c10eAdB465e6098AD4ad3D9625C6D832",
+    "defaultAccountPrivateKey": "09261d406dd9c8c308dcd4b05445195762c01f3226d4df6132cb57e0a28a53c1",
+    "contractAddress": "0xDF1BF9C167fca857caDb34a826D7bE8bb9a47497",
+    "contractABI": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "name": "nid",
+            "type": "string"
+          },
+          {
+            "name": "nidImage",
+            "type": "string"
+          }
+        ],
+        "name": "setNID",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "name": "tin",
+            "type": "string"
+          },
+          {
+            "name": "tinImage",
+            "type": "string"
+          }
+        ],
+        "name": "setTIN",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "nid",
+            "type": "string"
+          }
+        ],
+        "name": "nidSet",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "tin",
+            "type": "string"
+          }
+        ],
+        "name": "tinSet",
+        "type": "event"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "getKeys",
+        "outputs": [
+          {
+            "name": "",
+            "type": "string[]"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "name": "getNID",
+        "outputs": [
+          {
+            "components": [
+              {
+                "name": "nid",
+                "type": "string"
+              },
+              {
+                "name": "nidImage",
+                "type": "string"
+              }
+            ],
+            "name": "",
+            "type": "tuple"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "name": "getTIN",
+        "outputs": [
+          {
+            "components": [
+              {
+                "name": "tin",
+                "type": "string"
+              },
+              {
+                "name": "tinImage",
+                "type": "string"
+              }
+            ],
+            "name": "",
+            "type": "tuple"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ]
+  }
